@@ -673,3 +673,8 @@ a:hover {
     margin-bottom: 22px;
   }
 }
+
+.hero .cta-row {
+  margin-bottom: 0;
+}
+
