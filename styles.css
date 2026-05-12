@@ -86,9 +86,10 @@ img {
 
 .profile-photo {
   width: 176px;
+  height: 176px;
   aspect-ratio: 1;
   object-fit: cover;
-  object-position: center 18%;
+  object-position: center;
   border-radius: 50%;
   border: 1px solid var(--line);
   background: #f8f9fa;
@@ -283,6 +284,7 @@ h3 {
 
   .profile-photo {
     width: 126px;
+    height: 126px;
   }
 
   .section {
