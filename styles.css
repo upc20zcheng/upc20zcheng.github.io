@@ -138,13 +138,15 @@ h2 {
 
 .bracket-list li {
   counter-increment: bracket-item;
-  display: grid;
-  grid-template-columns: 2.4em minmax(0, 1fr);
-  gap: 0.4em;
+  position: relative;
+  padding-left: 2.65em;
 }
 
 .bracket-list li::before {
   content: "[" counter(bracket-item) "]";
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .document-links {
