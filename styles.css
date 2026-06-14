@@ -20,7 +20,7 @@ body {
   margin: 0;
   color: var(--ink);
   background: var(--bg);
-  font-family: "Noto Serif SC", "Songti SC", SimSun, "Times New Roman", serif;
+  font-family: "Times New Roman", Times, "Noto Serif SC", "Songti SC", SimSun, serif;
   font-size: 16px;
   line-height: 1.78;
 }
@@ -128,6 +128,23 @@ h2 {
 
 .ordered-list li + li {
   margin-top: 10px;
+}
+
+.bracket-list {
+  list-style: none;
+  counter-reset: bracket-item;
+  padding-left: 0;
+}
+
+.bracket-list li {
+  counter-increment: bracket-item;
+  display: grid;
+  grid-template-columns: 2.4em minmax(0, 1fr);
+  gap: 0.4em;
+}
+
+.bracket-list li::before {
+  content: "[" counter(bracket-item) "]";
 }
 
 .document-links {
