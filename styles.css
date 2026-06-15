@@ -1,11 +1,14 @@
 :root {
-  --bg: #ffffff;
-  --ink: #202124;
-  --muted: #5f6368;
-  --line: #dadce0;
-  --line-soft: #eceff1;
-  --accent: #174ea6;
-  --max-width: 980px;
+  --bg: #f6f7f9;
+  --paper: #ffffff;
+  --ink: #1f2328;
+  --muted: #5b6169;
+  --line: #d8dde4;
+  --line-soft: #edf0f3;
+  --accent: #24515f;
+  --accent-soft: #eef5f6;
+  --max-width: 1040px;
+  --text-width: 68ch;
 }
 
 * {
@@ -21,13 +24,14 @@ body {
   color: var(--ink);
   background: var(--bg);
   font-family: "Times New Roman", Times, "Noto Serif SC", "Songti SC", SimSun, serif;
-  font-size: 16px;
-  line-height: 1.78;
+  font-size: 17px;
+  line-height: 1.72;
 }
 
 a {
   color: var(--accent);
   text-decoration: none;
+  text-underline-offset: 0.18em;
 }
 
 a:hover {
@@ -39,54 +43,64 @@ em {
 }
 
 .site-header {
-  width: min(var(--max-width), calc(100% - 40px));
+  width: min(var(--max-width), calc(100% - 48px));
   margin: 0 auto;
-  padding: 18px 0 16px;
+  padding: 18px 0 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid rgba(36, 81, 95, 0.18);
 }
 
 .brand {
   color: var(--ink);
   font-weight: 700;
+  font-size: 1rem;
 }
 
 .site-nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 10px 18px;
+  gap: 8px 18px;
 }
 
 .site-nav a {
   color: var(--muted);
-  font-size: 0.94rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 
 .page {
-  width: min(var(--max-width), calc(100% - 40px));
+  width: min(var(--max-width), calc(100% - 48px));
   margin: 0 auto;
-  padding: 40px 0 70px;
+  padding: 42px 0 80px;
+}
+
+.resume {
+  background: var(--paper);
+  border: 1px solid rgba(31, 35, 40, 0.08);
+  box-shadow: 0 24px 70px rgba(31, 35, 40, 0.08);
+  padding: clamp(34px, 6vw, 68px);
 }
 
 .resume-title {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 150px;
-  align-items: start;
-  gap: 28px;
-  padding-bottom: 34px;
+  grid-template-columns: minmax(0, 1fr) 142px;
+  align-items: center;
+  gap: 42px;
+  padding-bottom: 42px;
   border-bottom: 1px solid var(--line);
 }
 
 .profile-photo {
-  width: 150px;
-  height: 150px;
+  width: 142px;
+  height: 142px;
   object-fit: cover;
   border-radius: 50%;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(36, 81, 95, 0.2);
+  box-shadow: 0 12px 28px rgba(31, 35, 40, 0.12);
 }
 
 h1,
@@ -97,18 +111,23 @@ p {
 
 h1 {
   margin-bottom: 0;
-  font-size: clamp(2rem, 5vw, 3rem);
-  line-height: 1.2;
+  font-size: clamp(2.25rem, 5vw, 3.6rem);
+  line-height: 1.05;
   font-weight: 700;
 }
 
 h2 {
-  margin-bottom: 16px;
-  font-size: 1.35rem;
-  line-height: 1.35;
+  margin-bottom: 0;
+  color: var(--accent);
+  font-size: 1.04rem;
+  line-height: 1.45;
+  font-weight: 700;
 }
 
 .section {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  column-gap: 42px;
   padding: 34px 0;
   border-bottom: 1px solid var(--line-soft);
 }
@@ -119,15 +138,30 @@ h2 {
 
 .section p {
   margin-bottom: 12px;
+  max-width: var(--text-width);
+}
+
+.section > :not(h2) {
+  grid-column: 2;
+}
+
+.section > h2 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.section > :last-child {
+  margin-bottom: 0;
 }
 
 .ordered-list {
   margin: 0;
   padding-left: 1.35rem;
+  max-width: var(--text-width);
 }
 
 .ordered-list li + li {
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .bracket-list {
@@ -139,7 +173,7 @@ h2 {
 .bracket-list li {
   counter-increment: bracket-item;
   position: relative;
-  padding-left: 2.65em;
+  padding-left: 2.75em;
 }
 
 .bracket-list li::before {
@@ -147,12 +181,13 @@ h2 {
   position: absolute;
   left: 0;
   top: 0;
+  color: var(--accent);
 }
 
 .document-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px 20px;
+  gap: 10px 22px;
   margin: 0;
 }
 
@@ -179,16 +214,37 @@ h2 {
   }
 
   .page {
-    padding-top: 30px;
+    padding: 28px 0 54px;
+  }
+
+  .resume {
+    padding: 28px 22px 34px;
   }
 
   .resume-title {
     grid-template-columns: 1fr;
     gap: 20px;
+    justify-items: start;
+    padding-bottom: 30px;
   }
 
   .profile-photo {
     width: 126px;
     height: 126px;
+    order: -1;
+  }
+
+  .section {
+    display: block;
+    padding: 28px 0;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 12vw, 2.8rem);
+  }
+
+  h2 {
+    margin-bottom: 14px;
+    font-size: 1.12rem;
   }
 }
