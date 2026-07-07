@@ -1,14 +1,14 @@
 :root {
-  --bg: #f6f7f9;
+  --bg: #f4f6f7;
   --paper: #ffffff;
   --ink: #1f2328;
-  --muted: #5b6169;
-  --line: #d8dde4;
-  --line-soft: #edf0f3;
+  --muted: #59636c;
+  --line: #ccd6da;
+  --line-soft: #e8edf0;
   --accent: #24515f;
   --accent-soft: #eef5f6;
   --max-width: 1040px;
-  --text-width: 68ch;
+  --text-width: 72ch;
 }
 
 * {
@@ -25,7 +25,9 @@ body {
   background: var(--bg);
   font-family: "Times New Roman", Times, "Noto Serif SC", "Songti SC", SimSun, serif;
   font-size: 17px;
-  line-height: 1.72;
+  line-height: 1.74;
+  font-variant-numeric: tabular-nums;
+  text-rendering: optimizeLegibility;
 }
 
 a {
@@ -75,32 +77,32 @@ em {
 .page {
   width: min(var(--max-width), calc(100% - 48px));
   margin: 0 auto;
-  padding: 42px 0 80px;
+  padding: 42px 0 82px;
 }
 
 .resume {
   background: var(--paper);
   border: 1px solid rgba(31, 35, 40, 0.08);
-  box-shadow: 0 24px 70px rgba(31, 35, 40, 0.08);
-  padding: clamp(34px, 6vw, 68px);
+  box-shadow: 0 28px 76px rgba(31, 35, 40, 0.09);
+  padding: clamp(38px, 6vw, 70px);
 }
 
 .resume-title {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 142px;
+  grid-template-columns: minmax(0, 1fr) 136px;
   align-items: center;
   gap: 42px;
-  padding-bottom: 42px;
-  border-bottom: 1px solid var(--line);
+  padding-bottom: 34px;
+  border-bottom: 2px solid var(--line);
 }
 
 .profile-photo {
-  width: 142px;
-  height: 142px;
+  width: 136px;
+  height: 136px;
   object-fit: cover;
   border-radius: 50%;
-  border: 1px solid rgba(36, 81, 95, 0.2);
-  box-shadow: 0 12px 28px rgba(31, 35, 40, 0.12);
+  border: 1px solid rgba(36, 81, 95, 0.24);
+  box-shadow: 0 14px 32px rgba(31, 35, 40, 0.13);
 }
 
 h1,
@@ -111,33 +113,34 @@ p {
 
 h1 {
   margin-bottom: 0;
-  font-size: clamp(2.25rem, 5vw, 3.6rem);
-  line-height: 1.05;
+  font-size: clamp(2.35rem, 5vw, 3.55rem);
+  line-height: 1.06;
   font-weight: 700;
 }
 
 h2 {
   margin-bottom: 0;
   color: var(--accent);
-  font-size: 1.04rem;
-  line-height: 1.45;
+  font-size: 1.05rem;
+  line-height: 1.5;
   font-weight: 700;
 }
 
 .section {
   display: grid;
-  grid-template-columns: 210px minmax(0, 1fr);
+  grid-template-columns: 214px minmax(0, 1fr);
   column-gap: 42px;
-  padding: 34px 0;
+  padding: 30px 0;
   border-bottom: 1px solid var(--line-soft);
 }
 
 .section:last-child {
   border-bottom: 0;
+  padding-bottom: 0;
 }
 
 .section p {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   max-width: var(--text-width);
 }
 
@@ -148,6 +151,16 @@ h2 {
 .section > h2 {
   grid-column: 1;
   grid-row: 1;
+  padding-top: 1px;
+}
+
+.section > h2::after {
+  content: "";
+  display: block;
+  width: 44px;
+  height: 2px;
+  margin-top: 10px;
+  background: var(--accent);
 }
 
 .section > :last-child {
@@ -161,7 +174,7 @@ h2 {
 }
 
 .ordered-list li + li {
-  margin-top: 12px;
+  margin-top: 9px;
 }
 
 .bracket-list {
@@ -225,18 +238,26 @@ h2 {
     grid-template-columns: 1fr;
     gap: 20px;
     justify-items: start;
-    padding-bottom: 30px;
+    padding-bottom: 28px;
   }
 
   .profile-photo {
-    width: 126px;
-    height: 126px;
+    width: 124px;
+    height: 124px;
     order: -1;
   }
 
   .section {
     display: block;
-    padding: 28px 0;
+    padding: 26px 0;
+  }
+
+  .section > h2 {
+    margin-bottom: 14px;
+  }
+
+  .section > h2::after {
+    margin-top: 8px;
   }
 
   h1 {
@@ -244,7 +265,38 @@ h2 {
   }
 
   h2 {
-    margin-bottom: 14px;
     font-size: 1.12rem;
+  }
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 16mm 18mm;
+  }
+
+  body {
+    background: #ffffff;
+    font-size: 11pt;
+    line-height: 1.45;
+  }
+
+  .site-header {
+    display: none;
+  }
+
+  .page {
+    width: 100%;
+    padding: 0;
+  }
+
+  .resume {
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .section {
+    break-inside: avoid;
   }
 }
