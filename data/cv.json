@@ -1,0 +1,274 @@
+{
+  "meta": {
+    "nameZh": "程振",
+    "nameEn": "Zhen Cheng",
+    "titleZh": "教师简介——程振",
+    "titleEn": "Curriculum Vitae — Zhen Cheng",
+    "affiliationZh": "阜阳师范大学商学院",
+    "affiliationEn": "School of Business, Fuyang Normal University",
+    "homepage": "https://upc20zcheng.github.io/",
+    "email": "202406038@fynu.edu.cn",
+    "addressZh": "安徽省阜阳市清河东路741号；邮政编码236041",
+    "addressEn": "No. 741 Qinghe East Road, Fuyang, Anhui Province, China 236041"
+  },
+  "profile": {
+    "basicZh": "程振，中国石油大学（华东）管理学博士，硕士生导师，讲师。",
+    "basicEn": "Zhen Cheng holds a Ph.D. in Management from China University of Petroleum (East China) and is a lecturer and master's supervisor.",
+    "rolesZh": [
+      "管理学博士",
+      "讲师",
+      "硕士生导师"
+    ],
+    "rolesEn": [
+      "Ph.D. in Management",
+      "Lecturer",
+      "Master's Supervisor"
+    ],
+    "researchZh": [
+      "绿色智能财会",
+      "会计数据标准增信",
+      "环境制度与公司财务",
+      "算电协同与智能经济新形态"
+    ],
+    "researchEn": [
+      "Green intelligent accounting and finance",
+      "Credit enhancement through accounting data standards",
+      "Environmental institutions and corporate finance",
+      "Computing-power–electricity coordination and new forms of smart economy"
+    ],
+    "projectsSummaryZh": "主持安徽省社科基金青年项目1项、厅市级项目2项、阜阳师范大学青年人才基金重点项目1项。参与四项国家、省级与教育部课题，以及一项横向课题。",
+    "projectsSummaryEn": "Principal investigator for one Anhui Provincial Social Science Fund Youth Project, two department- and municipal-level projects, and one key project of the Fuyang Normal University Youth Talent Fund. Participant in four national, provincial, and Ministry of Education projects, as well as one industry-sponsored project.",
+    "publicationsSummaryZh": "近五年在以第一作者/通讯作者在 International Review of Economics & Finance、Energy、Journal of Cleaner Production、中国人口·资源与环境、产业经济研究、商业研究、经济问题探索、江淮时报、技术经济与管理研究等国内外学术期刊（中科院1区/国家自然科学基金委认定的B类/FMS高质量中文期刊/CSSCI）上发表学术论文10余篇。",
+    "publicationsSummaryEn": "In the past five years, as first author or corresponding author, he has published more than ten academic papers in domestic and international journals and outlets including International Review of Economics & Finance, Energy, Journal of Cleaner Production, China Population, Resources and Environment, Industrial Economics Research, Commercial Research, Inquiry into Economic Issues, Jianghuai Times, and Technoeconomics & Management Research. These include CAS Q1 journals, Category B journals recognized by the National Natural Science Foundation of China, FMS high-quality Chinese journals, and CSSCI journals.",
+    "serviceZh": "International Review of Economics & Finance、International Review of Financial Analysis、Environmental Engineering and Management Journal、Frontiers in Public Health、PLOS ONE、Frontiers in Sustainable Food Systems 等多个期刊审稿人。",
+    "serviceEn": "Reviewer for International Review of Economics & Finance, International Review of Financial Analysis, Environmental Engineering and Management Journal, Frontiers in Public Health, PLOS ONE, Frontiers in Sustainable Food Systems, and other journals.",
+    "recruitmentZh": "工商管理学硕士（会计学、企业管理、技术经济及管理）；会计专业硕士（MPAcc）",
+    "recruitmentEn": "Academic Master of Business Administration students in accounting, enterprise management, and technological economics and management; Master of Professional Accounting (MPAcc) students.",
+    "coursesZh": "《管理定量分析：方法与技术》《管理会计学》（本科生）、《统计分析方法》《财务管理理论与实务》（研究生）",
+    "coursesEn": "Management Quantitative Analysis: Methods and Techniques and Managerial Accounting for undergraduates; Statistical Analysis Methods and Theory and Practice of Financial Management for graduate students."
+  },
+  "publications": [
+    {
+      "year": "2026",
+      "roleZh": "第一作者",
+      "roleEn": "First author",
+      "titleZh": "Beyond green: Can financial reform for ecology curb corporate tax avoidance?",
+      "titleEn": "Beyond green: Can financial reform for ecology curb corporate tax avoidance?",
+      "type": "J",
+      "venueZh": "International Review of Economics & Finance",
+      "venueEn": "International Review of Economics & Finance",
+      "detailsZh": "2026: 105630.",
+      "detailsEn": "2026: 105630.",
+      "ratingZh": "新锐SCI 一区",
+      "ratingEn": "Emerging SCI Q1"
+    },
+    {
+      "year": "2025",
+      "roleZh": "第一作者",
+      "roleEn": "First author",
+      "titleZh": "Energy use rights trading and carbon emissions",
+      "titleEn": "Energy use rights trading and carbon emissions",
+      "type": "J",
+      "venueZh": "Energy",
+      "venueEn": "Energy",
+      "detailsZh": "2025, 315: 134360.",
+      "detailsEn": "2025, 315: 134360.",
+      "ratingZh": "中科院SCI 一区",
+      "ratingEn": "CAS SCI Q1"
+    },
+    {
+      "year": "2025",
+      "roleZh": "第一作者",
+      "roleEn": "First author",
+      "titleZh": "Can environmental information disclosure promote urban carbon emission reduction? Quasi-experimental evidence from China",
+      "titleEn": "Can environmental information disclosure promote urban carbon emission reduction? Quasi-experimental evidence from China",
+      "type": "J",
+      "venueZh": "Journal of Cleaner Production",
+      "venueEn": "Journal of Cleaner Production",
+      "detailsZh": "2025, 489: 144698.",
+      "detailsEn": "2025, 489: 144698.",
+      "ratingZh": "中科院SCI 一区",
+      "ratingEn": "CAS SCI Q1"
+    },
+    {
+      "year": "2025",
+      "roleZh": "第一作者",
+      "roleEn": "First author",
+      "titleZh": "新质生产力视域下安徽构建“政产学研金服用”七位一体创新生态实现非对称赶超研究",
+      "titleEn": "Research on Anhui's construction of a seven-in-one innovation ecosystem of government, industry, academia, research, finance, services, and application from the perspective of new quality productive forces to achieve asymmetric catch-up",
+      "type": "N",
+      "venueZh": "江淮时报",
+      "venueEn": "Jianghuai Times",
+      "detailsZh": "2025-08-29(006).",
+      "detailsEn": "2025-08-29(006).",
+      "ratingZh": "省级报刊·理论版",
+      "ratingEn": "Provincial newspaper, theory section"
+    },
+    {
+      "year": "2023",
+      "roleZh": "通讯作者",
+      "roleEn": "Corresponding author",
+      "titleZh": "中国环境保护税法对企业劳动雇佣的影响",
+      "titleEn": "The impact of China's Environmental Protection Tax Law on corporate labor employment",
+      "type": "J",
+      "venueZh": "中国人口·资源与环境",
+      "venueEn": "China Population, Resources and Environment",
+      "detailsZh": "2023, 33(01): 61-73.",
+      "detailsEn": "2023, 33(01): 61–73.",
+      "ratingZh": "CSSCI、国家自然科学基金委认定的B类期刊、FMS T2",
+      "ratingEn": "CSSCI; Category B journal recognized by the National Natural Science Foundation of China; FMS T2"
+    },
+    {
+      "year": "2021",
+      "roleZh": "通讯作者",
+      "roleEn": "Corresponding author",
+      "titleZh": "国家低碳战略提高了企业全要素生产率吗?——基于低碳城市试点的准自然实验",
+      "titleEn": "Has the national low-carbon strategy improved firms' total factor productivity? A quasi-natural experiment based on low-carbon city pilots",
+      "type": "J",
+      "venueZh": "产业经济研究",
+      "venueEn": "Industrial Economics Research",
+      "detailsZh": "2021, (06): 101-115.",
+      "detailsEn": "2021, (06): 101–115.",
+      "ratingZh": "CSSCI、FMS高质量中文期刊 T2",
+      "ratingEn": "CSSCI; FMS high-quality Chinese journal T2"
+    },
+    {
+      "year": "2022",
+      "roleZh": "通讯作者",
+      "roleEn": "Corresponding author",
+      "titleZh": "黄河流域数字经济、生态保护与高质量发展时空耦合及其驱动因素",
+      "titleEn": "Spatiotemporal coupling of the digital economy, ecological protection, and high-quality development in the Yellow River Basin and its driving factors",
+      "type": "J",
+      "venueZh": "经济问题探索",
+      "venueEn": "Inquiry into Economic Issues",
+      "detailsZh": "2022, (08): 135-148.",
+      "detailsEn": "2022, (08): 135–148.",
+      "ratingZh": "CSSCI",
+      "ratingEn": "CSSCI"
+    },
+    {
+      "year": "2024",
+      "roleZh": "通讯作者",
+      "roleEn": "Corresponding author",
+      "titleZh": "低碳城市建设能成为企业数字化转型的新动能吗?——来自低碳城市试点的经验证据",
+      "titleEn": "Can low-carbon city development become a new driver of firms' digital transformation? Evidence from low-carbon city pilots",
+      "type": "J",
+      "venueZh": "商业研究",
+      "venueEn": "Commercial Research",
+      "detailsZh": "2024, (03): 80-91.",
+      "detailsEn": "2024, (03): 80–91.",
+      "ratingZh": "CSSCI",
+      "ratingEn": "CSSCI"
+    },
+    {
+      "year": "2024",
+      "roleZh": "通讯作者",
+      "roleEn": "Corresponding author",
+      "titleZh": "环境规制对我国城市碳排放的影响——门槛特征与空间效应",
+      "titleEn": "The impact of environmental regulation on urban carbon emissions in China: Threshold characteristics and spatial effects",
+      "type": "J",
+      "venueZh": "技术经济与管理研究",
+      "venueEn": "Technoeconomics & Management Research",
+      "detailsZh": "2024, (11): 67-72.",
+      "detailsEn": "2024, (11): 67–72.",
+      "ratingZh": "北大中文核心",
+      "ratingEn": "Peking University Chinese Core Journal"
+    },
+    {
+      "year": "2022",
+      "roleZh": "第一作者",
+      "roleEn": "First author",
+      "titleZh": "绿色信贷、企业风险承担与企业绿色创新——“波特效应”的中国证据",
+      "titleEn": "Green credit, corporate risk-taking, and corporate green innovation: Chinese evidence on the Porter effect",
+      "type": "J",
+      "venueZh": "技术经济与管理研究",
+      "venueEn": "Technoeconomics & Management Research",
+      "detailsZh": "2022, (10): 68-74.",
+      "detailsEn": "2022, (10): 68–74.",
+      "ratingZh": "北大中文核心",
+      "ratingEn": "Peking University Chinese Core Journal"
+    }
+  ],
+  "projects": [
+    {
+      "nameZh": "安徽省社科规划青年项目",
+      "nameEn": "Anhui Provincial Social Science Planning Youth Project",
+      "code": "AHSKYQ2024D022",
+      "roleZh": "主持",
+      "roleEn": "PI"
+    },
+    {
+      "nameZh": "安徽省财政科研课题",
+      "nameEn": "Anhui Provincial Finance Research Project",
+      "code": "AHCZ2025LX12",
+      "roleZh": "主持",
+      "roleEn": "PI"
+    },
+    {
+      "nameZh": "阜阳市社科规划课题",
+      "nameEn": "Fuyang Social Science Planning Project",
+      "code": "FSK2025059",
+      "roleZh": "主持",
+      "roleEn": "PI"
+    },
+    {
+      "nameZh": "阜阳师范大学青年人才基金重点项目",
+      "nameEn": "Fuyang Normal University Youth Talent Fund Key Project",
+      "code": "",
+      "roleZh": "主持",
+      "roleEn": "PI"
+    },
+    {
+      "nameZh": "阜阳师范大学科学研究项目",
+      "nameEn": "Fuyang Normal University Scientific Research Project",
+      "code": "2024KYQD0135",
+      "roleZh": "主持",
+      "roleEn": "PI"
+    },
+    {
+      "nameZh": "国家社科基金青年项目",
+      "nameEn": "National Social Science Fund of China Youth Project",
+      "code": "21CJY035",
+      "roleZh": "参与",
+      "roleEn": "Participant"
+    },
+    {
+      "nameZh": "国家社科基金一般项目",
+      "nameEn": "National Social Science Fund of China General Project",
+      "code": "20BJY090",
+      "roleZh": "参与",
+      "roleEn": "Participant"
+    },
+    {
+      "nameZh": "中国石油天然气股份有限公司长庆油田分公司项目",
+      "nameEn": "PetroChina Changqing Oilfield Company Research Project",
+      "code": "21YL2-FW-011",
+      "roleZh": "参与",
+      "roleEn": "Participant"
+    },
+    {
+      "nameZh": "山东省社会科学规划金融研究专项",
+      "nameEn": "Shandong Provincial Social Science Planning Special Project on Finance Research",
+      "code": "19CJRJ02",
+      "roleZh": "参与",
+      "roleEn": "Participant"
+    },
+    {
+      "nameZh": "中央高校基本科研业务费专项",
+      "nameEn": "Fundamental Research Funds for the Central Universities",
+      "code": "19CX04034B",
+      "roleZh": "参与",
+      "roleEn": "Participant"
+    }
+  ],
+  "awards": [
+    {
+      "zh": "“第七届营销科学与创新国际高峰论坛（MSI 2023）暨《Internet Research》专辑国际学术会议”，“优秀论文二等奖”。",
+      "en": "Second Prize for Excellent Paper, the 7th International Summit Forum on Marketing Science and Innovation (MSI 2023) and the Internet Research special-issue international academic conference."
+    },
+    {
+      "zh": "Excellence Award, Competition on Energy and Climate Change (CECC), a special event of the BRICS Youth Energy Summit and International Energy Youth Conference, organized by the Worldwide Energy University Network.",
+      "en": "Excellence Award, Competition on Energy and Climate Change (CECC), a special event of the BRICS Youth Energy Summit and International Energy Youth Conference, organized by the Worldwide Energy University Network."
+    }
+  ]
+}
