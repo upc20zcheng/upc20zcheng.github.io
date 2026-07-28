@@ -197,8 +197,8 @@ const website = `<!DOCTYPE html>
 
     <section id="contact" class="contact-section">
       <div>
-        <p class="eyebrow">Contact & curriculum vitae</p>
-        <h2>学术交流与<br />研究生招生</h2>
+        <p class="eyebrow">Contact &amp; CV Downloads</p>
+        <h2>联系方式与<br />简历下载</h2>
       </div>
       <div class="contact-details">
         <a class="contact-email" href="mailto:${esc(data.meta.email)}">${esc(data.meta.email)}</a>
