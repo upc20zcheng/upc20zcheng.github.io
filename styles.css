@@ -194,35 +194,22 @@ main {
 }
 
 .hero-name {
-  display: flex;
-  gap: 22px;
-  align-items: end;
+  display: block;
 }
 
 .hero-name h1 {
   margin: 0;
   color: var(--navy-950);
-  font-size: clamp(4.6rem, 10vw, 8.3rem);
+  font-size: clamp(3.8rem, 7vw, 6.25rem);
   font-weight: 700;
-  letter-spacing: 0.03em;
-  line-height: 0.9;
-}
-
-.hero-name p {
-  margin: 0 0 0.7em;
-  color: var(--muted);
-  font-family: var(--sans);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  writing-mode: vertical-rl;
-  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1;
 }
 
 .hero-lede {
   max-width: 34em;
-  margin: 34px 0 0;
-  font-size: clamp(18px, 2vw, 22px);
+  margin: 28px 0 0;
+  font-size: clamp(18px, 1.8vw, 21px);
   line-height: 1.75;
 }
 
@@ -320,9 +307,21 @@ main {
   border-bottom: 1px solid var(--line);
 }
 
-.research-axis > p {
-  margin: 0;
+.research-axis-label {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  justify-content: center;
   padding: 24px 18px 24px 0;
+}
+
+.research-axis-label strong {
+  color: var(--navy-900);
+  font-size: 20px;
+  line-height: 1.35;
+}
+
+.research-axis-label span {
   color: var(--blue-600);
   font-family: var(--sans);
   font-size: 10px;
@@ -347,6 +346,7 @@ main {
   min-height: 98px;
   padding: 24px 18px;
   border-left: 1px solid var(--line);
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
 }
@@ -418,12 +418,11 @@ main {
 }
 
 .fact-list dt {
-  margin-bottom: 8px;
-  color: var(--blue-600);
-  font-family: var(--sans);
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 0.09em;
+  margin-bottom: 9px;
+  color: var(--navy-900);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.45;
 }
 
 .fact-list dd {
@@ -515,7 +514,7 @@ main {
 .project-group-title h3 {
   margin: 0;
   color: var(--navy-900);
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .project-group-title span {
@@ -673,7 +672,7 @@ main {
     grid-template-columns: 1fr;
   }
 
-  .research-axis > p {
+  .research-axis-label {
     padding-bottom: 14px;
   }
 
@@ -755,7 +754,7 @@ main {
   }
 
   .hero-name h1 {
-    font-size: clamp(4.2rem, 24vw, 6.4rem);
+    font-size: clamp(3.5rem, 18vw, 5rem);
   }
 
   .hero-lede {

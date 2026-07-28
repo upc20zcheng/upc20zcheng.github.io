@@ -30,7 +30,7 @@ const website = `<!DOCTYPE html>
   <meta name="description" content="${esc(
     `${data.profile.basicZh}研究方向：${data.profile.researchZh.join("、")}。`
   )}" />
-  <link rel="stylesheet" href="styles.css?v=20260728" />
+  <link rel="stylesheet" href="styles.css?v=20260728b" />
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主要内容</a>
@@ -38,8 +38,8 @@ const website = `<!DOCTYPE html>
     <a class="brand" href="#top" aria-label="返回首页">
       <span class="brand-mark">CZ</span>
       <span>
-        <strong>${esc(data.meta.nameZh)}</strong>
-        <small>${esc(data.meta.nameEn)}</small>
+        <strong>学术主页</strong>
+        <small>Academic Profile</small>
       </span>
     </a>
     <nav class="site-nav" aria-label="主导航">
@@ -60,9 +60,8 @@ const website = `<!DOCTYPE html>
         <p class="eyebrow">${esc(data.meta.affiliationZh)}</p>
         <div class="hero-name">
           <h1>${esc(data.meta.nameZh)}</h1>
-          <p lang="en">${esc(data.meta.nameEn)}</p>
         </div>
-        <p class="hero-lede">${esc(data.profile.basicZh)}</p>
+        <p class="hero-lede">${esc(data.profile.basicZh.replace(`${data.meta.nameZh}，`, ""))}</p>
         <div class="hero-actions" aria-label="简历下载">
           <a class="button button-primary" href="chengzhen_teacher_profile_no_if.pdf" target="_blank" rel="noreferrer">
             中文 PDF <span aria-hidden="true">↗</span>
@@ -79,7 +78,10 @@ const website = `<!DOCTYPE html>
         <figcaption>Management · Accounting · Sustainability</figcaption>
       </figure>
       <div class="research-axis" aria-label="研究方向">
-        <p>Research agenda</p>
+        <div class="research-axis-label">
+          <strong>研究方向</strong>
+          <span lang="en">Research Interests</span>
+        </div>
         <ol>
           ${data.profile.researchZh
             .map(
@@ -210,7 +212,7 @@ const website = `<!DOCTYPE html>
   </main>
 
   <footer class="site-footer">
-    <p>© ${new Date().getFullYear()} ${esc(data.meta.nameZh)}</p>
+    <p>© ${new Date().getFullYear()} · Academic Profile</p>
     <a href="#top">返回顶部 ↑</a>
   </footer>
 </body>
