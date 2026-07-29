@@ -61,7 +61,7 @@ const website = `<!DOCTYPE html>
         <div class="hero-name">
           <h1>${esc(data.meta.nameZh)}</h1>
         </div>
-        <p class="hero-lede">${esc(data.profile.basicZh.replace(`${data.meta.nameZh}，`, ""))}</p>
+        <p class="hero-lede">${esc(data.profile.heroZh)}</p>
         <div class="hero-actions" aria-label="简历下载">
           <a class="button button-primary" href="chengzhen_teacher_profile_no_if.pdf" target="_blank" rel="noreferrer">
             中文 PDF <span aria-hidden="true">↗</span>
