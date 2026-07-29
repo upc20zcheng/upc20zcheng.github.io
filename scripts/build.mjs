@@ -30,7 +30,7 @@ const website = `<!DOCTYPE html>
   <meta name="description" content="${esc(
     `${data.profile.basicZh}研究方向：${data.profile.researchZh.join("、")}。`
   )}" />
-  <link rel="stylesheet" href="styles.css?v=20260728b" />
+  <link rel="stylesheet" href="styles.css?v=20260730" />
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主要内容</a>
