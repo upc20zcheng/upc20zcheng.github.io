@@ -25,9 +25,11 @@ const publicationRating = (publication, language, wrapper) => {
   const suffix = language === "zh" ? "Zh" : "En";
   const rating = publication[`rating${suffix}`];
   if (!rating) return "";
+  const formattedRating = language === "zh" ? `（${esc(rating)}）` : `(${esc(rating)})`;
+  const spacer = language === "zh" ? "" : " ";
   return wrapper === "website"
-    ? ` <span class="journal-tier">（${esc(rating)}）</span>`
-    : ` <strong>(${esc(rating)})</strong>`;
+    ? `${spacer}<span class="journal-tier">${formattedRating}</span>`
+    : `${spacer}<strong>${formattedRating}</strong>`;
 };
 
 const website = `<!DOCTYPE html>
@@ -41,7 +43,7 @@ const website = `<!DOCTYPE html>
   <meta name="description" content="${esc(
     `${data.profile.basicZh}研究方向：${data.profile.researchZh.join("、")}。`
   )}" />
-  <link rel="stylesheet" href="styles.css?v=20260730b" />
+  <link rel="stylesheet" href="styles.css?v=20260820" />
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主要内容</a>
@@ -60,7 +62,7 @@ const website = `<!DOCTYPE html>
       <a href="#awards">获奖</a>
       <a href="#contact">联系</a>
     </nav>
-    <a class="header-download" href="chengzhen_teacher_profile_no_if.pdf?v=20260820" target="_blank" rel="noreferrer">
+    <a class="header-download" href="chengzhen_teacher_profile_no_if.pdf?v=20260820b" target="_blank" rel="noreferrer">
       中文简历 <span aria-hidden="true">↗</span>
     </a>
   </header>
@@ -74,10 +76,10 @@ const website = `<!DOCTYPE html>
         </div>
         <p class="hero-lede">${esc(data.profile.heroZh)}</p>
         <div class="hero-actions" aria-label="简历下载">
-          <a class="button button-primary" href="chengzhen_teacher_profile_no_if.pdf?v=20260820" target="_blank" rel="noreferrer">
+          <a class="button button-primary" href="chengzhen_teacher_profile_no_if.pdf?v=20260820b" target="_blank" rel="noreferrer">
             中文 PDF <span aria-hidden="true">↗</span>
           </a>
-          <a class="button button-secondary" href="chengzhen_teacher_profile_en.pdf?v=20260820" target="_blank" rel="noreferrer">
+          <a class="button button-secondary" href="chengzhen_teacher_profile_en.pdf?v=20260820b" target="_blank" rel="noreferrer">
             English PDF <span aria-hidden="true">↗</span>
           </a>
         </div>
@@ -86,7 +88,6 @@ const website = `<!DOCTYPE html>
         <div class="portrait-frame">
           <img src="assets/profile-hd-20260426.png" alt="${esc(data.meta.nameZh)}职业照" width="742" height="1040" decoding="async" fetchpriority="high" />
         </div>
-        <figcaption>Management · Accounting · Sustainability</figcaption>
       </figure>
       <div class="research-axis" aria-label="研究方向">
         <div class="research-axis-label">
@@ -217,8 +218,8 @@ const website = `<!DOCTYPE html>
         <a class="contact-email" href="mailto:${esc(data.meta.email)}">${esc(data.meta.email)}</a>
         <p>${esc(data.meta.addressZh)}</p>
         <div class="contact-downloads">
-          <a href="chengzhen_teacher_profile_no_if.pdf?v=20260820" target="_blank" rel="noreferrer">下载中文简历 <span aria-hidden="true">↗</span></a>
-          <a href="chengzhen_teacher_profile_en.pdf?v=20260820" target="_blank" rel="noreferrer">Download English CV <span aria-hidden="true">↗</span></a>
+          <a href="chengzhen_teacher_profile_no_if.pdf?v=20260820b" target="_blank" rel="noreferrer">下载中文简历 <span aria-hidden="true">↗</span></a>
+          <a href="chengzhen_teacher_profile_en.pdf?v=20260820b" target="_blank" rel="noreferrer">Download English CV <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>

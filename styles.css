@@ -211,6 +211,7 @@ main {
   margin: 18px 0 0;
   font-size: clamp(18px, 1.8vw, 21px);
   line-height: 1.62;
+  overflow-wrap: anywhere;
 }
 
 .hero-actions {
@@ -288,14 +289,10 @@ main {
   filter: saturate(0.88) contrast(1.03);
 }
 
-.portrait figcaption {
-  margin-top: 8px;
-  color: var(--muted);
-  font-family: var(--sans);
-  font-size: 9px;
-  letter-spacing: 0.12em;
-  text-align: right;
-  text-transform: uppercase;
+.hero-copy > .eyebrow {
+  margin-bottom: 20px;
+  font-size: 13px;
+  letter-spacing: 0.1em;
 }
 
 .research-axis {
@@ -604,8 +601,8 @@ main {
 
 .contact-section h2 {
   margin: 0;
-  font-size: clamp(2.3rem, 4.4vw, 4rem);
-  line-height: 1.14;
+  font-size: clamp(2rem, 3.4vw, 3.2rem);
+  line-height: 1.16;
 }
 
 .contact-details {
@@ -743,10 +740,6 @@ main {
 
   .portrait-frame img {
     height: 360px;
-  }
-
-  .portrait figcaption {
-    display: none;
   }
 
   .hero-copy {
