@@ -14,9 +14,20 @@ const esc = (value) =>
 
 const publicationCitation = (publication, language) => {
   const suffix = language === "zh" ? "Zh" : "En";
-  return `${esc(publication[`title${suffix}`])}[${publication.type}]. <cite>${esc(
+  const authors = publication[`authors${suffix}`];
+  const authorPrefix = authors ? `${esc(authors)}. ` : "";
+  return `${authorPrefix}${esc(publication[`title${suffix}`])}[${publication.type}]. <cite>${esc(
     publication[`venue${suffix}`]
   )}</cite>, ${esc(publication[`details${suffix}`])}`;
+};
+
+const publicationRating = (publication, language, wrapper) => {
+  const suffix = language === "zh" ? "Zh" : "En";
+  const rating = publication[`rating${suffix}`];
+  if (!rating) return "";
+  return wrapper === "website"
+    ? ` <span class="journal-tier">（${esc(rating)}）</span>`
+    : ` <strong>(${esc(rating)})</strong>`;
 };
 
 const website = `<!DOCTYPE html>
@@ -49,7 +60,7 @@ const website = `<!DOCTYPE html>
       <a href="#awards">获奖</a>
       <a href="#contact">联系</a>
     </nav>
-    <a class="header-download" href="chengzhen_teacher_profile_no_if.pdf" target="_blank" rel="noreferrer">
+    <a class="header-download" href="chengzhen_teacher_profile_no_if.pdf?v=20260820" target="_blank" rel="noreferrer">
       中文简历 <span aria-hidden="true">↗</span>
     </a>
   </header>
@@ -63,10 +74,10 @@ const website = `<!DOCTYPE html>
         </div>
         <p class="hero-lede">${esc(data.profile.heroZh)}</p>
         <div class="hero-actions" aria-label="简历下载">
-          <a class="button button-primary" href="chengzhen_teacher_profile_no_if.pdf" target="_blank" rel="noreferrer">
+          <a class="button button-primary" href="chengzhen_teacher_profile_no_if.pdf?v=20260820" target="_blank" rel="noreferrer">
             中文 PDF <span aria-hidden="true">↗</span>
           </a>
-          <a class="button button-secondary" href="chengzhen_teacher_profile_en.pdf" target="_blank" rel="noreferrer">
+          <a class="button button-secondary" href="chengzhen_teacher_profile_en.pdf?v=20260820" target="_blank" rel="noreferrer">
             English PDF <span aria-hidden="true">↗</span>
           </a>
         </div>
@@ -135,9 +146,11 @@ const website = `<!DOCTYPE html>
                 <time>${esc(publication.year)}</time>
                 <span>${esc(publication.roleZh)}</span>
               </div>
-              <p>${publicationCitation(publication, "zh")} <span class="journal-tier">（${esc(
-                publication.ratingZh
-              )}）</span></p>
+              <p>${publicationCitation(publication, "zh")}${publicationRating(
+                publication,
+                "zh",
+                "website"
+              )}</p>
             </article>
           </li>`
             )
@@ -204,8 +217,8 @@ const website = `<!DOCTYPE html>
         <a class="contact-email" href="mailto:${esc(data.meta.email)}">${esc(data.meta.email)}</a>
         <p>${esc(data.meta.addressZh)}</p>
         <div class="contact-downloads">
-          <a href="chengzhen_teacher_profile_no_if.pdf" target="_blank" rel="noreferrer">下载中文简历 <span aria-hidden="true">↗</span></a>
-          <a href="chengzhen_teacher_profile_en.pdf" target="_blank" rel="noreferrer">Download English CV <span aria-hidden="true">↗</span></a>
+          <a href="chengzhen_teacher_profile_no_if.pdf?v=20260820" target="_blank" rel="noreferrer">下载中文简历 <span aria-hidden="true">↗</span></a>
+          <a href="chengzhen_teacher_profile_en.pdf?v=20260820" target="_blank" rel="noreferrer">Download English CV <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
@@ -315,9 +328,11 @@ const printDocument = (language) => {
             <time>${esc(publication.year)}</time>
             <span>${esc(publication[`role${suffix}`])}</span>
           </div>
-          <p>${publicationCitation(publication, language)} <strong>(${esc(
-            publication[`rating${suffix}`]
-          )})</strong></p>
+          <p>${publicationCitation(publication, language)}${publicationRating(
+            publication,
+            language,
+            "print"
+          )}</p>
         </li>`
           )
           .join("\n        ")}
