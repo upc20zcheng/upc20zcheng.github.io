@@ -43,7 +43,7 @@ const website = `<!DOCTYPE html>
   <meta name="description" content="${esc(
     `${data.profile.basicZh}研究方向：${data.profile.researchZh.join("、")}。`
   )}" />
-  <link rel="stylesheet" href="styles.css?v=20260824" />
+  <link rel="stylesheet" href="styles.css?v=20260824b" />
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主要内容</a>
@@ -62,7 +62,7 @@ const website = `<!DOCTYPE html>
       <a href="#awards">获奖</a>
       <a href="#contact">联系</a>
     </nav>
-    <a class="header-download" href="chengzhen_teacher_profile_no_if.pdf?v=20260824" target="_blank" rel="noreferrer">
+    <a class="header-download" href="chengzhen_teacher_profile_no_if.pdf?v=20260824b" target="_blank" rel="noreferrer">
       中文简历 <span aria-hidden="true">↗</span>
     </a>
   </header>
@@ -76,10 +76,10 @@ const website = `<!DOCTYPE html>
         <p class="hero-affiliation">${esc(data.meta.affiliationZh)}</p>
         <p class="hero-lede">${esc(data.profile.heroZh)}</p>
         <div class="hero-actions" aria-label="简历下载">
-          <a class="button button-primary" href="chengzhen_teacher_profile_no_if.pdf?v=20260824" target="_blank" rel="noreferrer">
+          <a class="button button-primary" href="chengzhen_teacher_profile_no_if.pdf?v=20260824b" target="_blank" rel="noreferrer">
             中文 PDF <span aria-hidden="true">↗</span>
           </a>
-          <a class="button button-secondary" href="chengzhen_teacher_profile_en.pdf?v=20260824" target="_blank" rel="noreferrer">
+          <a class="button button-secondary" href="chengzhen_teacher_profile_en.pdf?v=20260824b" target="_blank" rel="noreferrer">
             English PDF <span aria-hidden="true">↗</span>
           </a>
         </div>
