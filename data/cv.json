@@ -8,13 +8,15 @@
     "affiliationEn": "School of Business, Fuyang Normal University",
     "homepage": "https://upc20zcheng.github.io/",
     "email": "202406038@fynu.edu.cn",
-    "addressZh": "安徽省阜阳市清河东路741号；邮政编码236041",
-    "addressEn": "No. 741 Qinghe East Road, Fuyang, Anhui Province, China 236041"
+    "addressZh": "安徽省阜阳市清河东路741号",
+    "postalCodeZh": "邮政编码236041",
+    "addressEn": "No. 741 Qinghe East Road, Fuyang, Anhui Province, China",
+    "postalCodeEn": "Postal code 236041"
   },
   "profile": {
-    "basicZh": "程振，中国石油大学（华东）管理学博士，硕士生导师，讲师。",
+    "basicZh": "程振，硕士生导师，讲师，中国石油大学（华东）管理学博士。",
     "heroZh": "硕士生导师，讲师，中国石油大学（华东）管理学博士。",
-    "basicEn": "Zhen Cheng holds a Ph.D. in Management from China University of Petroleum (East China) and is a lecturer and master's supervisor.",
+    "basicEn": "Zhen Cheng is a master's supervisor and lecturer and holds a Ph.D. in Management from China University of Petroleum (East China).",
     "rolesZh": [
       "管理学博士",
       "讲师",
@@ -60,8 +62,8 @@
       "venueEn": "International Review of Economics & Finance",
       "detailsZh": "2026, 111: 105630.",
       "detailsEn": "2026, 111: 105630.",
-      "ratingZh": "新锐SCI 一区",
-      "ratingEn": "Emerging SCI Q1"
+      "ratingZh": "ABS/AJG-2、新锐SCI 一区",
+      "ratingEn": "ABS/AJG-2; Xinrui SCI Q1"
     },
     {
       "year": "2026",

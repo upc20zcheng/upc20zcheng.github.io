@@ -43,7 +43,7 @@ const website = `<!DOCTYPE html>
   <meta name="description" content="${esc(
     `${data.profile.basicZh}研究方向：${data.profile.researchZh.join("、")}。`
   )}" />
-  <link rel="stylesheet" href="styles.css?v=20260820" />
+  <link rel="stylesheet" href="styles.css?v=20260824" />
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主要内容</a>
@@ -62,7 +62,7 @@ const website = `<!DOCTYPE html>
       <a href="#awards">获奖</a>
       <a href="#contact">联系</a>
     </nav>
-    <a class="header-download" href="chengzhen_teacher_profile_no_if.pdf?v=20260820b" target="_blank" rel="noreferrer">
+    <a class="header-download" href="chengzhen_teacher_profile_no_if.pdf?v=20260824" target="_blank" rel="noreferrer">
       中文简历 <span aria-hidden="true">↗</span>
     </a>
   </header>
@@ -70,16 +70,16 @@ const website = `<!DOCTYPE html>
   <main id="main">
     <section id="top" class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">${esc(data.meta.affiliationZh)}</p>
         <div class="hero-name">
           <h1>${esc(data.meta.nameZh)}</h1>
         </div>
+        <p class="hero-affiliation">${esc(data.meta.affiliationZh)}</p>
         <p class="hero-lede">${esc(data.profile.heroZh)}</p>
         <div class="hero-actions" aria-label="简历下载">
-          <a class="button button-primary" href="chengzhen_teacher_profile_no_if.pdf?v=20260820b" target="_blank" rel="noreferrer">
+          <a class="button button-primary" href="chengzhen_teacher_profile_no_if.pdf?v=20260824" target="_blank" rel="noreferrer">
             中文 PDF <span aria-hidden="true">↗</span>
           </a>
-          <a class="button button-secondary" href="chengzhen_teacher_profile_en.pdf?v=20260820b" target="_blank" rel="noreferrer">
+          <a class="button button-secondary" href="chengzhen_teacher_profile_en.pdf?v=20260824" target="_blank" rel="noreferrer">
             English PDF <span aria-hidden="true">↗</span>
           </a>
         </div>
@@ -211,16 +211,13 @@ const website = `<!DOCTYPE html>
 
     <section id="contact" class="contact-section">
       <div>
-        <p class="eyebrow">Contact &amp; CV Downloads</p>
-        <h2>联系方式与<br />简历下载</h2>
+        <p class="eyebrow">Contact</p>
+        <h2>联系方式</h2>
       </div>
       <div class="contact-details">
         <a class="contact-email" href="mailto:${esc(data.meta.email)}">${esc(data.meta.email)}</a>
         <p>${esc(data.meta.addressZh)}</p>
-        <div class="contact-downloads">
-          <a href="chengzhen_teacher_profile_no_if.pdf?v=20260820b" target="_blank" rel="noreferrer">下载中文简历 <span aria-hidden="true">↗</span></a>
-          <a href="chengzhen_teacher_profile_en.pdf?v=20260820b" target="_blank" rel="noreferrer">Download English CV <span aria-hidden="true">↗</span></a>
-        </div>
+        <p>${esc(data.meta.postalCodeZh)}</p>
       </div>
     </section>
   </main>
@@ -272,7 +269,6 @@ const printDocument = (language) => {
     ? {
         lang: "zh-CN",
         title: data.meta.titleZh,
-        kicker: "教师简介",
         profile: "个人基本情况",
         publications: "代表性论文",
         projects: "主持 / 参与科研项目",
@@ -282,7 +278,6 @@ const printDocument = (language) => {
     : {
         lang: "en",
         title: data.meta.titleEn,
-        kicker: "Curriculum Vitae",
         profile: "Profile",
         publications: "Representative Publications",
         projects: "Research Projects",
@@ -301,7 +296,6 @@ const printDocument = (language) => {
   <main class="cv">
     <header class="cv-header">
       <div>
-        <p class="cv-kicker">${labels.kicker}</p>
         <h1>${esc(zh ? data.meta.nameZh : data.meta.nameEn)}</h1>
         <p class="cv-affiliation">${esc(zh ? data.meta.affiliationZh : data.meta.affiliationEn)}</p>
       </div>
@@ -309,6 +303,7 @@ const printDocument = (language) => {
         <a href="mailto:${esc(data.meta.email)}">${esc(data.meta.email)}</a>
         <a href="${esc(data.meta.homepage)}">${esc(data.meta.homepage.replace("https://", ""))}</a>
         <span>${esc(zh ? data.meta.addressZh : data.meta.addressEn)}</span>
+        <span>${esc(zh ? data.meta.postalCodeZh : data.meta.postalCodeEn)}</span>
       </address>
     </header>
 
@@ -367,6 +362,7 @@ const printDocument = (language) => {
       <div>
         <a href="mailto:${esc(data.meta.email)}">${esc(data.meta.email)}</a>
         <p>${esc(zh ? data.meta.addressZh : data.meta.addressEn)}</p>
+        <p>${esc(zh ? data.meta.postalCodeZh : data.meta.postalCodeEn)}</p>
       </div>
     </section>
   </main>
