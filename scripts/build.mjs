@@ -73,10 +73,10 @@ const website = `<!DOCTYPE html>
         <p class="hero-affiliation">${esc(data.meta.affiliationZh)}</p>
         <p class="hero-lede">${esc(data.profile.heroZh)}</p>
         <div class="hero-actions" aria-label="简历下载">
-          <a class="button button-primary" href="chengzhen_teacher_profile_no_if.pdf?v=20260907" target="_blank" rel="noreferrer">
+          <a class="button button-primary" href="chengzhen_teacher_profile_no_if.pdf?v=20260907-numbering1" target="_blank" rel="noreferrer">
             中文 PDF <span aria-hidden="true">↗</span>
           </a>
-          <a class="button button-secondary" href="chengzhen_teacher_profile_en.pdf?v=20260907" target="_blank" rel="noreferrer">
+          <a class="button button-secondary" href="chengzhen_teacher_profile_en.pdf?v=20260907-numbering1" target="_blank" rel="noreferrer">
             English PDF <span aria-hidden="true">↗</span>
           </a>
         </div>

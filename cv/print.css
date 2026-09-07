@@ -162,7 +162,7 @@ h1 {
 }
 
 .cv-publications li::before {
-  content: counter(publication, decimal-leading-zero);
+  content: "[" counter(publication) "]";
   position: absolute;
   top: 1.55mm;
   left: 0;
@@ -220,7 +220,7 @@ cite {
 }
 
 .cv-projects li::before {
-  content: counter(project, decimal-leading-zero);
+  content: "[" counter(project) "]";
   position: absolute;
   left: 0;
   color: var(--blue);
@@ -254,7 +254,7 @@ cite {
 }
 
 .cv-awards li::before {
-  content: counter(award, decimal-leading-zero);
+  content: "[" counter(award) "]";
   position: absolute;
   left: 0;
   color: var(--blue);
