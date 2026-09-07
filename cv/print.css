@@ -42,8 +42,8 @@ a {
 
 .cv-header {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 66mm;
-  gap: 11mm;
+  grid-template-columns: minmax(0, 1fr) 28mm;
+  gap: 8mm;
   align-items: end;
   padding: 0 0 7mm;
   border-bottom: 1.4pt solid var(--navy);
@@ -71,15 +71,17 @@ h1 {
   line-height: 1.25;
 }
 
-address {
-  display: grid;
-  gap: 1.2mm;
-  color: var(--muted);
-  font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
-  font-size: 7.7pt;
-  font-style: normal;
-  line-height: 1.35;
-  text-align: right;
+.cv-photo {
+  width: 26mm;
+  margin: 0;
+  justify-self: end;
+}
+
+.cv-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0.5pt solid var(--line);
 }
 
 .cv-section {
@@ -284,6 +286,13 @@ cite {
 
 .cv-contact a {
   color: var(--blue);
+  font-weight: 700;
+}
+
+.cv-contact p > strong {
+  color: var(--blue);
+  font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+  font-size: 7.6pt;
   font-weight: 700;
 }
 

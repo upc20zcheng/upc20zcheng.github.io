@@ -128,13 +128,11 @@ img {
   font-weight: 600;
 }
 
-.site-nav a,
-.header-download {
+.site-nav a {
   position: relative;
 }
 
-.site-nav a::after,
-.header-download::after {
+.site-nav a::after {
   content: "";
   position: absolute;
   right: 0;
@@ -147,18 +145,9 @@ img {
   transition: transform 180ms ease;
 }
 
-.site-nav a:hover::after,
-.header-download:hover::after {
+.site-nav a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
-}
-
-.header-download {
-  justify-self: end;
-  color: var(--blue-600);
-  font-family: var(--sans);
-  font-size: 12px;
-  font-weight: 700;
 }
 
 main {
@@ -275,7 +264,7 @@ main {
 
 .portrait-frame {
   position: relative;
-  max-width: 372px;
+  max-width: 318px;
   margin-left: auto;
   overflow: hidden;
   background: var(--blue-100);
@@ -292,9 +281,7 @@ main {
 
 .portrait-frame img {
   width: 100%;
-  height: clamp(450px, 35vw, 500px);
-  object-fit: cover;
-  object-position: center 22%;
+  height: auto;
   filter: saturate(0.88) contrast(1.03);
 }
 
@@ -623,6 +610,14 @@ main {
   font-size: clamp(1.2rem, 2.4vw, 2rem);
 }
 
+.contact-label {
+  color: #91bccf;
+  font-family: var(--sans);
+  font-size: 0.58em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
 .contact-details > p {
   margin: 0;
   color: #b9c9d0;
@@ -705,10 +700,6 @@ main {
     height: 34px;
   }
 
-  .header-download {
-    font-size: 11px;
-  }
-
   .hero,
   .content-section {
     width: min(100% - 32px, var(--max-width));
@@ -724,13 +715,9 @@ main {
   }
 
   .portrait-frame {
-    width: min(78vw, 330px);
+    width: min(60vw, 246px);
     margin-right: 0;
     margin-left: auto;
-  }
-
-  .portrait-frame img {
-    height: 360px;
   }
 
   .hero-copy {

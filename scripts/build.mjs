@@ -43,7 +43,7 @@ const website = `<!DOCTYPE html>
   <meta name="description" content="${esc(
     `${data.profile.basicZh}研究方向：${data.profile.researchZh.join("、")}。`
   )}" />
-  <link rel="stylesheet" href="styles.css?v=20260824b" />
+  <link rel="stylesheet" href="styles.css?v=20260907" />
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主要内容</a>
@@ -62,9 +62,6 @@ const website = `<!DOCTYPE html>
       <a href="#awards">获奖</a>
       <a href="#contact">联系</a>
     </nav>
-    <a class="header-download" href="chengzhen_teacher_profile_no_if.pdf?v=20260824b" target="_blank" rel="noreferrer">
-      中文简历 <span aria-hidden="true">↗</span>
-    </a>
   </header>
 
   <main id="main">
@@ -76,10 +73,10 @@ const website = `<!DOCTYPE html>
         <p class="hero-affiliation">${esc(data.meta.affiliationZh)}</p>
         <p class="hero-lede">${esc(data.profile.heroZh)}</p>
         <div class="hero-actions" aria-label="简历下载">
-          <a class="button button-primary" href="chengzhen_teacher_profile_no_if.pdf?v=20260824b" target="_blank" rel="noreferrer">
+          <a class="button button-primary" href="chengzhen_teacher_profile_no_if.pdf?v=20260907" target="_blank" rel="noreferrer">
             中文 PDF <span aria-hidden="true">↗</span>
           </a>
-          <a class="button button-secondary" href="chengzhen_teacher_profile_en.pdf?v=20260824b" target="_blank" rel="noreferrer">
+          <a class="button button-secondary" href="chengzhen_teacher_profile_en.pdf?v=20260907" target="_blank" rel="noreferrer">
             English PDF <span aria-hidden="true">↗</span>
           </a>
         </div>
@@ -215,9 +212,9 @@ const website = `<!DOCTYPE html>
         <h2>联系方式</h2>
       </div>
       <div class="contact-details">
-        <a class="contact-email" href="mailto:${esc(data.meta.email)}">${esc(data.meta.email)}</a>
-        <p>${esc(data.meta.addressZh)}</p>
-        <p>${esc(data.meta.postalCodeZh)}</p>
+        <a class="contact-email" href="mailto:${esc(data.meta.email)}"><span class="contact-label">Email：</span>${esc(data.meta.email)}</a>
+        <p><span class="contact-label">地址：</span>${esc(data.meta.addressZh)}</p>
+        <p><span class="contact-label">邮编：</span>${esc(data.meta.postalCodeZh)}</p>
       </div>
     </section>
   </main>
@@ -299,12 +296,9 @@ const printDocument = (language) => {
         <h1>${esc(zh ? data.meta.nameZh : data.meta.nameEn)}</h1>
         <p class="cv-affiliation">${esc(zh ? data.meta.affiliationZh : data.meta.affiliationEn)}</p>
       </div>
-      <address>
-        <a href="mailto:${esc(data.meta.email)}">${esc(data.meta.email)}</a>
-        <a href="${esc(data.meta.homepage)}">${esc(data.meta.homepage.replace("https://", ""))}</a>
-        <span>${esc(zh ? data.meta.addressZh : data.meta.addressEn)}</span>
-        <span>${esc(zh ? data.meta.postalCodeZh : data.meta.postalCodeEn)}</span>
-      </address>
+      <figure class="cv-photo">
+        <img src="../assets/profile-hd-20260426.png" alt="${esc(zh ? `${data.meta.nameZh}职业照` : `Professional portrait of ${data.meta.nameEn}`)}" width="742" height="1040" />
+      </figure>
     </header>
 
     <section class="cv-section">
@@ -360,9 +354,9 @@ const printDocument = (language) => {
     <section class="cv-section cv-contact">
       <h2><span>05</span>${labels.contact}</h2>
       <div>
-        <a href="mailto:${esc(data.meta.email)}">${esc(data.meta.email)}</a>
-        <p>${esc(zh ? data.meta.addressZh : data.meta.addressEn)}</p>
-        <p>${esc(zh ? data.meta.postalCodeZh : data.meta.postalCodeEn)}</p>
+        <p><strong>${zh ? "Email：" : "Email: "}</strong><a href="mailto:${esc(data.meta.email)}">${esc(data.meta.email)}</a></p>
+        <p><strong>${zh ? "地址：" : "Address: "}</strong>${esc(zh ? data.meta.addressZh : data.meta.addressEn)}</p>
+        <p><strong>${zh ? "邮编：" : "Postal code: "}</strong>${esc(zh ? data.meta.postalCodeZh : data.meta.postalCodeEn)}</p>
       </div>
     </section>
   </main>
